@@ -1,7 +1,7 @@
 module.exports = {
   env: {
-    browser: true,
-    es2021: true
+    es2021: true,
+    node: true
   },
   extends: [
     'standard'
@@ -11,5 +11,10 @@ module.exports = {
     sourceType: 'module'
   },
   rules: {
+    'prefer-const': 'off'
+  },
+  globals: {
+    window: 'off',
+    document: 'off'
   }
 }
