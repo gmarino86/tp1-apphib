@@ -1,13 +1,12 @@
 import * as PostsModel from '../services/posts.service.js'
 
-export function viewAll(req, res) {
-  
+function getAll (req, res) {
   PostsModel.find()
     .then(function (posts) {
-      res.render('posts', { posts })
+      res.status(200).json(posts)
     })
 }
 
 export default {
-  viewAll
+  getAll
 }

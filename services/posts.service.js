@@ -1,12 +1,11 @@
-import mongodb  from 'mongodb'
-
-const client = new mongodb.MongoClient('mongodb://localhost:27017')
+import {MongoClient, ObjectId} from 'mongodb'
+const client = new MongoClient('mongodb://127.0.0.1:27017')
 
 async function find () {
   return client.connect()
     .then(async function () {
-      const db = client.db('Posteos')
-      const posts = await db.collection('Posts').find().toArray()
+      const db = client.db("Posteos")
+      const posts = await db.collection("Posts").find({}).toArray()
       client.close()
       return posts
     })
