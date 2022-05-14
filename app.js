@@ -1,5 +1,5 @@
 import express from 'express'
-import AlumnosRoute from './routes/alumnos.route.js'
+import PostsRoute from './routes/posts.route.js'
 const app = express()
 
 app.set('view engine', 'ejs')
@@ -9,13 +9,10 @@ app.use(express.urlencoded({ extended: false }))
 app.use(express.json()) 
 
 /* RUTAS */
-app.use('/', AlumnosRoute)
-app.get('/ruta/prueba', function (req, res) {
-  res.render('hola', { titulo: '<strong>Hola</strong>', mostrar: true })
-})
+app.use('/', PostsRoute)
 
 
 /* SERVER EXPRESS */
 app.listen(2022, function () {
-  console.log('Hola! http://localhost:2022')
+  console.log('Server ON! http://localhost:2022')
 })
