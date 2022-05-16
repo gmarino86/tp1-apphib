@@ -6,8 +6,11 @@ const route = express.Router()
 
 // Principal
 route.get('/', postsController.viewAll)
+route.get('/post/:idChat', postsController.getByIdChat)
+
 // http://localhost:2022/api/posts
 route.get('/api/posts', postControllerApi.getAll)
-
+// http://localhost:2022/api/posts/{idChat}
+route.get('/api/posts/:idChat', postControllerApi.getByIdChat)
 
 export default route

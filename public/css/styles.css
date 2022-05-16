@@ -2,3 +2,17 @@
     bottom: 0;
     position: absolute;
 }
+
+.btnNew {
+    width: 65px;
+    height: 65px;
+    position: fixed;
+    right: 0;
+    margin-right: 20px;
+    font-size: 3rem;
+    line-height: 3rem;
+    padding-top: 0px;
+}
+a {
+    text-decoration: none !important;
+}

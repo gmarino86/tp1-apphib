@@ -7,6 +7,18 @@ function getAll (req, res) {
     })
 }
 
+function getByIdChat (req, res) {
+  let idChat = parseInt(req.params.idChat)
+  PostsModel.getByIdChat(idChat)
+  .then(function(comments) {
+    res.status(200).json(comments)
+  })
+  .catch(function(err){
+    res.status(400).json(err)
+  })
+}
+
 export default {
-  getAll
+  getAll,
+  getByIdChat
 }
