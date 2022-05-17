@@ -9,6 +9,7 @@ function getAll (req, res) {
 
 function getByIdChat (req, res) {
   let idChat = parseInt(req.params.idChat)
+  
   PostsModel.getByIdChat(idChat)
   .then(function(comments) {
     res.status(200).json(comments)
@@ -17,6 +18,9 @@ function getByIdChat (req, res) {
     res.status(400).json(err)
   })
 }
+
+
+
 
 export default {
   getAll,

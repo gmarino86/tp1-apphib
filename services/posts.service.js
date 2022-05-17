@@ -37,11 +37,28 @@ async function getByIdChat(id) {
     .catch(function () {
       console.log('No me pude conectar')
     })
-    
+}
+
+async function createComment(idChat, mensaje) {
+  return client.connect()
+    .then(async function () {
+      const db = client.db("Posteos")
+      const comment = await db.collection("Chats").insertOne({
+        idChat: idChat,
+        mensajes: { texto: mensaje, fecha: new Date() },
+        usuario: { nombre: 'Usuario Anónimo', idUsuario: 0 }
+        })
+      client.close()
+      return comment
+    })
+    .catch(function () {
+      console.log('No me pude conectar')
+    })
 }
 
 export {
   find,
   findPostByIdChat,
-  getByIdChat
+  getByIdChat,
+  createComment
 }

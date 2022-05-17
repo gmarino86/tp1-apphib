@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "627f21b031c2a48017d7d8f4"
+  },
+  "nombre": "QUERECICLO",
+  "descripcion": "QUERECICLO es una empresa recuperadora de informática y electrónica la cual\nactualmente trabaja con particulares y empresas e interactúa con cooperativas y\nfundaciones",
+  "categoria": "Basura",
+  "idChat": 1,
+  "img": "que-reciclo.webp"
+},{
+  "_id": {
+    "$oid": "6281d3db90b35cd28438aafd"
+  },
+  "nombre": "Humedales",
+  "descripcion": "Los humedales son zonas vitales para la supervivencia humana, retienen y almacenan agua apta para el consumo humano y la producción; actúan como esponjas, amortiguando el efecto de las tormentas y las inundaciones. Además, sostienen una\nrica biodiversidad y almacenan más carbono que ningún otro ecosistema.",
+  "categoria": "Basura",
+  "idChat": 2,
+  "img": "humedales.webp"
+},{
+  "_id": {
+    "$oid": "6281d3dd90b35cd28438aafe"
+  },
+  "nombre": "¿Sabes qué son los bioplásticos?",
+  "descripcion": "Los bioplásticos son un tipo de plásticos que se caracterizan por estar fabricados a partir de materiales orgánicos como residuos agrícolas, celulosa o almidón de patata o maíz (de ahí que se denominen con el prefijo “bio”) y que, en consecuencia, son biodegradables.",
+  "categoria": "Tecno",
+  "idChat": 3,
+  "img": "bioplastico.webp"
+}]

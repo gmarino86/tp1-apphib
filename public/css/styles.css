@@ -16,3 +16,7 @@
 a {
     text-decoration: none !important;
 }
+
+.principal {
+    min-height: calc(100vh - 264px);
+}

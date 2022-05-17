@@ -1,0 +1,103 @@
+[{
+  "_id": {
+    "$oid": "6283166e05700b1da0789015"
+  },
+  "idChat": 1,
+  "mensajes": {
+    "texto": "Hola",
+    "fecha": {
+      "$date": {
+        "$numberLong": "1652758126644"
+      }
+    }
+  },
+  "usuario": {
+    "nombre": "Usuario Anónimo",
+    "idUsuario": 0
+  }
+},{
+  "_id": {
+    "$oid": "628316df05700b1da0789016"
+  },
+  "idChat": 1,
+  "mensajes": {
+    "texto": "Como andan? ",
+    "fecha": {
+      "$date": {
+        "$numberLong": "1652758239215"
+      }
+    }
+  },
+  "usuario": {
+    "nombre": "Usuario Anónimo",
+    "idUsuario": 0
+  }
+},{
+  "_id": {
+    "$oid": "6283187805700b1da0789017"
+  },
+  "idChat": 3,
+  "mensajes": {
+    "texto": "hola",
+    "fecha": {
+      "$date": {
+        "$numberLong": "1652758648679"
+      }
+    }
+  },
+  "usuario": {
+    "nombre": "Usuario Anónimo",
+    "idUsuario": 0
+  }
+},{
+  "_id": {
+    "$oid": "6283189105700b1da0789018"
+  },
+  "idChat": 3,
+  "mensajes": {
+    "texto": "Como andan? ",
+    "fecha": {
+      "$date": {
+        "$numberLong": "1652758673227"
+      }
+    }
+  },
+  "usuario": {
+    "nombre": "Usuario Anónimo",
+    "idUsuario": 0
+  }
+},{
+  "_id": {
+    "$oid": "6283189e05700b1da0789019"
+  },
+  "idChat": 2,
+  "mensajes": {
+    "texto": "Primer comentario",
+    "fecha": {
+      "$date": {
+        "$numberLong": "1652758686909"
+      }
+    }
+  },
+  "usuario": {
+    "nombre": "Usuario Anónimo",
+    "idUsuario": 0
+  }
+},{
+  "_id": {
+    "$oid": "62831c0f05700b1da078901a"
+  },
+  "idChat": 1,
+  "mensajes": {
+    "texto": "Todo tranqui? ",
+    "fecha": {
+      "$date": {
+        "$numberLong": "1652759567733"
+      }
+    }
+  },
+  "usuario": {
+    "nombre": "Usuario Anónimo",
+    "idUsuario": 0
+  }
+}]
