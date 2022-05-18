@@ -37,6 +37,11 @@
             <div class="card-body">
               <h3 class="card-title"><%= posts[i].nombre %></h3>
               <p class="card-text"><%= posts[i].descripcion %></p>
+              <% for(let c=0; c<categoria.length; c++) { %>
+                <% if (posts[i].idCat == categoria[c].idCat) { %>
+                  <small class="text-muted">Categoria: <%= categoria[c].nombre %></small>
+                <% } %>
+              <% } %>
             </div>
             <div class="card-footer text-muted">
               <a

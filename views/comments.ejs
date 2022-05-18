@@ -27,9 +27,9 @@
           alt="<%= data.nombre %>"
         />
       </div>
-      <p class="p-5"><%= data.descripcion %></p>
+      <p class="px-5 py-4 mb-3 divDescription"><%= data.descripcion %></p>
       <% for (let i=0; i < comments.length; i++) { %>
-      <div class="alert alert-success m-1 p-2" role="alert">
+      <div class="alert alert-success mb-1 mx-4 p-2" role="alert">
         <h3 class="alert-heading h4 m-0"><%= comments[i].usuario.nombre %></h3>
         <p class="m-0 p-0"><%= comments[i].mensajes.texto %></p>
       </div>

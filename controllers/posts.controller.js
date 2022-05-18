@@ -1,10 +1,13 @@
 import * as PostsModel from "../services/posts.service.js";
+import * as CategoryModel from "../services/categorias.service.js";
 
 export function viewAll(req, res) {
   PostsModel.find()
   .then(function (posts) {
-    console.log('%cposts.controller.js line:6 posts', 'color: #007acc;', posts);
-    res.render("posts", { posts });
+    CategoryModel.find()
+    .then(function (categoria){
+      res.render("posts", { posts, categoria })
+    })
   });
 }
 
@@ -34,4 +37,4 @@ export default {
   viewAll,
   getByIdChat,
   createComment
-};
+}
