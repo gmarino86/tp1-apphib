@@ -27,3 +27,7 @@ a {
     background: #d5ede0;
     font-weight: 500;
 }
+
+
+.grid-item { }
+.grid-item--width2 { width: 400px; }

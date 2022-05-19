@@ -1,0 +1,5 @@
+Database Name : Posteos
+Collection Name : Posts
+Collection Name : Chats
+Collection Name : Categorias
+Collection Name : Usuarios

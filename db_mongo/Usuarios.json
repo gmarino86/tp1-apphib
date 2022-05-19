@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "62855f133afead3e1e77cf5a"
+  },
+  "nombre": "Gastón Marino",
+  "idUser": 1
+},{
+  "_id": {
+    "$oid": "62855f433afead3e1e77cf5b"
+  },
+  "nombre": "Usuario Anónimo",
+  "idUser": 2
+}]

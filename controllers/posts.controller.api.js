@@ -29,11 +29,11 @@ function deletePost(req,res){
   let post = req.params.idPost
   
   PostsModel.borrar(post)
-  .then(function (data) {
-    res.status(200).json(data);
+  .then(function () {
+    res.status(200).json({"estado":true, "message":"Post eliminado"});
   })
-  .catch(function (err){
-    res.status(400).json(err);
+  .catch(function (){
+    res.status(400).json({"estado":false, "message":"El post no pudo ser eliminado"});
   })
 }
 

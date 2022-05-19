@@ -14,8 +14,9 @@ app.use('/', WebRoute)
 /* RUTAS API */
 app.use('/api', ApiRoute)
 
-
 /* SERVER EXPRESS */
 app.listen(2022, function () {
   console.log('Server ON! http://localhost:2022')
 })
+
+

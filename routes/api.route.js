@@ -39,7 +39,7 @@ route.post('/chat/post/:idChat/nuevo', chatsControllerApi.newChatToPost)
 
 //- Eliminar un tema
 route.delete('/post/:idPost/delete', postControllerApi.deletePost)
-//  http://localhost:2022/api/post/6285445f3afead3e1e77cf51/delete
+//  http://localhost:2022/api/post/62858a3c3afead3e1e77cf6a/delete
 
 //- Crear una categoría
 route.post('/categoria/nuevo', categoriaControllerApi.insert)

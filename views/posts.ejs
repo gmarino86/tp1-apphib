@@ -25,7 +25,40 @@
         que gusten para debatir sobre el curso que le estamos dando a nuestro
         planeta.
       </p>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="grid">
+        <% for (let i=0; i < posts.length; i++) { %>
+          
+            
+              <div class="card grid-item col col-sm-6 col-md-4 mb-3">
+                <img
+                  src="/img/<%= posts[i].img %>"
+                  class="card-img-top"
+                  alt="<%= posts[i].nombre %>"
+                />
+                <div class="card-body">
+                  <h3 class="card-title"><%= posts[i].nombre %></h3>
+                  <p class="card-text"><%= posts[i].descripcion %></p>
+                  <% for(let c=0; c<categoria.length; c++) { %>
+                    <% if (posts[i].idCat == categoria[c].idCat) { %>
+                      <small class="text-muted">Categoria: <%= categoria[c].nombre %></small>
+                    <% } %>
+                  <% } %>
+                </div>
+                <div class="card-footer text-muted">
+                  <a
+                    href="http://localhost:2022/post/<%=posts[i].idChat %>"
+                    class="btn btn-primary d-grid gap-2"
+                    >Ver más</a
+                  >
+                </div>
+              </div>
+            
+          
+        <% } %>
+        
+        
+      </div>
+<!--       <div class="row row-cols-1 row-cols-md-3 g-4">
         <% for (let i=0; i < posts.length; i++) { %>
         <div class="col" data-aos="zoom-in">
           <div class="card h-70">
@@ -53,7 +86,7 @@
           </div>
         </div>
         <% } %>
-      </div>
+      </div> -->
     </div>
 
     <%- include('layout/footer.ejs') %>
@@ -66,6 +99,13 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script src="/js/masonry.pkgd.min.js"></script>
+    <script>
+      window.onload = () => {
+        const grid = document.querySelector('.grid')
+        const masonry = new Masonry(grid)
+      }
     </script>
   </body>
 </html>

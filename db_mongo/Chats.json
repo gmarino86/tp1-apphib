@@ -100,4 +100,50 @@
     "nombre": "Usuario Anónimo",
     "idUsuario": 0
   }
+},{
+  "_id": {
+    "$oid": "6283253d2de016156422a4b6"
+  },
+  "idChat": 1,
+  "mensajes": {
+    "texto": "Hola Anónimo!",
+    "fecha": {
+      "$date": {
+        "$numberLong": "1652761917876"
+      }
+    }
+  },
+  "usuario": {
+    "nombre": "Usuario Anónimo",
+    "idUsuario": 0
+  }
+},{
+  "_id": {
+    "$oid": "6284f89ee22f4a569b07addc"
+  },
+  "idChat": 2,
+  "mensajes": {
+    "texto": "Segundo ",
+    "fecha": {
+      "$date": {
+        "$numberLong": "1652881566432"
+      }
+    }
+  },
+  "usuario": {
+    "nombre": "Usuario Anónimo",
+    "idUsuario": 0
+  }
+},{
+  "_id": {
+    "$oid": "62852351c397302d0068e6e6"
+  },
+  "idChat": 1,
+  "mensajes": {
+    "texto": "Mensaje modificado por la API"
+  },
+  "usuario": {
+    "nombre": "Usuario Anónimo",
+    "idUsuario": 0
+  }
 }]

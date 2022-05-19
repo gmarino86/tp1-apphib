@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "62832e9e7e077a5c0fa0bd1e"
+  },
+  "idCat": "1",
+  "nombre": "Basura"
+},{
+  "_id": {
+    "$oid": "62832f1a7e077a5c0fa0bd1f"
+  },
+  "idCat": "2",
+  "nombre": "Plastico"
+},{
+  "_id": {
+    "$oid": "628524b03afead3e1e77cf4c"
+  },
+  "idCat": "3",
+  "nombre": "Reciclaje"
+}]
