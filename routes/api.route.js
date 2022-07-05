@@ -7,7 +7,6 @@ import categoriaControllerApi from '../controllers/categoria.controller.api.js'
 import userControllerApi from '../controllers/user.controller.api.js'
 
 const route = express.Router()
-
 //- Traer todas las categorías (identificador y el nombre de la categoría)
 route.get('/categorias', catControllerApi.getAll)
 //  http://localhost:2022/api/categorias
@@ -34,7 +33,7 @@ route.patch('/chat/:id/editar',chatsControllerApi.editChat)
 // http://localhost:2022/api/chat/62852351c397302d0068e6e6/editar
 
 //- Permitir crear un comentario en un tema particular
-route.post('/chat/post/:idChat/nuevo', chatsControllerApi.newChatToPost)
+route.post('/chat/post/:idChat', chatsControllerApi.newChatToPost)
 //  http://localhost:2022/api/chat/post/4/nuevo
 
 //- Eliminar un tema

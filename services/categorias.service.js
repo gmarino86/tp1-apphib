@@ -21,7 +21,7 @@ async function filterByName(catName) {
   .then(async function () {
     const db = client.db("Posteos");
     const categoria = await db.collection("Categorias")
-    .find().filter({ nombre: catName }).toArray()
+    .find({ nombre: catName }).toArray()
     client.close()
     return categoria
   })
@@ -36,7 +36,7 @@ async function findCatById(idCat) {
   .then(async function () {
     const db = client.db("Posteos");
     const categoria = await db.collection("Categorias")
-    .find().filter({ idCat: idCat }).toArray()
+    .find({ idCat: idCat }).toArray()
     client.close()
     return categoria
   })
